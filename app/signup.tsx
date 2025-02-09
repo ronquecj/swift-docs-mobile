@@ -1,0 +1,30 @@
+'use dom';
+
+import React from 'react';
+import { Link } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
+import { SignupForm } from '@/components/ui/signup-form';
+import { GalleryVerticalEnd } from 'lucide-react';
+
+import '../global.css';
+
+const signup = () => {
+  return (
+    <div className="flex min-h-svh flex-col items-center justify-center gap-6 bg-muted p-6 md:p-10">
+      <div className="flex w-full max-w-sm flex-col gap-6">
+        <a
+          href="#"
+          className="flex items-center gap-2 self-center font-medium"
+        >
+          <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
+            <GalleryVerticalEnd className="size-4" />
+          </div>
+          Swift Docs
+        </a>
+        <SignupForm />
+      </div>
+    </div>
+  );
+};
+
+export default signup;
