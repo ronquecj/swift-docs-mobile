@@ -16,5 +16,5 @@
     "expo-env.d.ts",
     "app/_layout.jsx",
     "nativewind-env.d.ts"
-  ]
+, "app/qr-scanner.tsx", "app/signup.jsx", "components/ui/signupform.jsx", "app/scanner/index.jsx", "components/ui/signup-form.jsx"  ]
 }

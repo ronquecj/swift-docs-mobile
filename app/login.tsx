@@ -1,6 +1,6 @@
 'use dom';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { LoginForm } from '@/components/ui/login-form';
@@ -9,6 +9,9 @@ import { GalleryVerticalEnd } from 'lucide-react';
 import '../global.css';
 
 const login = () => {
+  useEffect(() => {
+    console.log('object');
+  }, []);
   return (
     <div className="flex min-h-svh flex-col items-center justify-center gap-6 bg-muted p-6 md:p-10">
       <div className="flex w-full max-w-sm flex-col gap-6">
